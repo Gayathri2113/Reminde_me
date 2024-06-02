@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #a2e692, #5597ab);
+    overflow: hidden;
+    /* opacity: 0; */
+    /* transition: opacity 1s ease; */
+}
+
+/* .visible{
+    opacity: 1;
+} */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 200px;
+}
+
+.signIn{
+    width: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    padding: 30px 50px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+.heading{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.content1{
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.submit{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 16px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 290px;
+    min-height: 300px;
+    border: 1px solid white;
+    padding: 30px 50px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+.content2 {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.circle1{
+    z-index: -5;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #e944ad, #a175f4);
+    filter: blur(30px);
+    transform: rotate(18deg);
+    
+    position: absolute;
+    left: -100px;
+    top: -80px;
+}
+
+.circle2 {
+    z-index: -5;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #e944ad, #a175f4);
+    filter: blur(30px);
+    transform: rotate(18deg);
+
+    position: absolute;
+    right: -100px;
+    bottom: -80px;
+}
+

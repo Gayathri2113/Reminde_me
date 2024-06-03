@@ -1,18 +1,21 @@
 const express = require("express");
 const cors = require("cors");
+const authRoutes = require("./routes/auth");
+require("dotenv").config();
 
 const app = express();
-
-const port = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req,res) => {
-    res.status(200).send("Server is up..! Now you can code");
+const port = process.env.PORT || 8000;
+
+app.get('/', (req, res) => {
+    res.status(200).send("Server is up..!");
 });
 
+app.use("/auth", authRoutes);
 
-app.listen(port,() => {
+app.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
